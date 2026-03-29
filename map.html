@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Campus Map – RCC Student Services</title>
+<link rel="stylesheet" href="style.css">
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+<body>
+<nav class="topnav">
+  <img src="assets/rcc_logo.png" class="logo" alt="RCC" onerror="this.style.display='none'">
+  <a href="index.html" class="site-title">Student Services Hub</a>
+  <button class="hamburger" onclick="toggleMenu()"><span></span><span></span><span></span></button>
+  <div class="nav-links">
+    <a href="index.html">Home</a><a href="residency.html">Residency</a><a href="canvas.html">Canvas</a>
+    <a href="tutoring.html">Tutoring</a><a href="career.html">Career</a><a href="counseling.html">Counseling</a>
+    <a href="accessibility.html">Accessibility</a><a href="soar.html">SOAR</a><a href="map.html" class="active">Map</a>
+  </div>
+</nav>
+<div class="mobile-menu" id="mobileMenu">
+  <a href="index.html">Home</a><a href="residency.html">Residency</a><a href="canvas.html">Canvas</a>
+  <a href="tutoring.html">Tutoring</a><a href="career.html">Career</a><a href="counseling.html">Counseling</a>
+  <a href="accessibility.html">Accessibility</a><a href="soar.html">SOAR</a><a href="map.html" class="active">Campus Map</a>
+</div>
+
+<div class="page-header">
+  <h1>Campus Map</h1>
+  <p>5160 Fayetteville Rd, Lumberton, NC 28360</p>
+</div>
+
+<div class="content">
+
+  <!-- Map Image -->
+  <div class="card" style="padding:12px;">
+    <img src="assets/campus_map.png" class="map-img" alt="RCC Campus Map">
+  </div>
+
+  <!-- Directions -->
+  <div class="card-navy">
+    <p style="color:rgba(255,255,255,0.85);font-size:13px;font-weight:500;margin-bottom:4px;">5160 Fayetteville Rd, Lumberton, NC 28360</p>
+    <p style="color:rgba(255,255,255,0.6);font-size:12px;margin-bottom:14px;">RCC I-95 Exit #22</p>
+    <div style="display:flex;gap:10px;">
+      <a href="https://maps.google.com/?q=Robeson+Community+College+5160+Fayetteville+Rd+Lumberton+NC" target="_blank" class="btn btn-navy" style="flex:1;justify-content:center;">
+        <span class="material-icons" style="font-size:18px;">directions</span> Get Directions
+      </a>
+      <a href="tel:9102723700" class="btn btn-outline" style="flex:1;justify-content:center;color:white;border-color:rgba(255,255,255,0.4);">
+        <span class="material-icons" style="font-size:18px;">phone</span> Call Campus
+      </a>
+    </div>
+  </div>
+
+  <!-- Parking -->
+  <div class="card-green">
+    <strong style="color:var(--navy);font-size:14px;">Parking Information</strong>
+    <p style="font-size:13px;color:var(--text-body);margin-top:8px;line-height:1.7;">
+      • Handicapped parking spaces available in all lots<br>
+      • Visitor parking in front of Buildings 1 & 2, between Buildings 3 & 14, and in front of Building 17<br>
+      • Callboxes located throughout campus<br>
+      • Campus Police located in Building 6
+    </p>
+  </div>
+
+  <!-- Building Directory -->
+  <div class="section-header"><span class="material-icons icon">domain</span><span>Building Directory</span></div>
+
+  <div class="card" style="padding:0;overflow:hidden;">
+    <div class="building-item"><span class="material-icons">location_on</span><div><div class="building-name">AC/Heating & Refrigeration Technology</div><div class="building-loc">Building 9</div></div></div>
+    <div class="building-item"><span class="material-icons">location_on</span><div><div class="building-name">A.D. Lewis Auditorium</div><div class="building-loc">Building 15</div></div></div>
+    <div class="building-item"><span class="material-icons">location_on</span><div><div class="building-name">Academic Success Center</div><div class="building-loc">Building 4, Library</div></div></div>
+    <div class="building-item"><span class="material-icons">location_on</span><div><div class="building-name">Administration</div><div class="building-loc">Building 2</div></div></div>
+    <div class="building-item"><span class="material-icons">location_on</span><div><div class="building-name">Admissions</div><div class="building-loc">Building 13</div></div></div>
+    <div class="building-item"><span class="material-icons">location_on</span><div><div class="building-name">Advanced Manufacturing Labs</div><div class="building-loc">Building 12</div></div></div>
+    <div class="building-item"><span class="material-icons">location_on</span><div><div class="building-name">Adult Basic Education</div><div class="building-loc">Building 12</div></div></div>
+    <div class="building-item"><span class="material-icons">location_on</span><div><div class="building-name">Adult High School</div><div class="building-loc">Building 12</div></div></div>
+    <div class="building-item"><span class="material-icons">location_on</span><div><div class="building-name">Anne Moss Biggs Library</div><div class="building-loc">Building 4</div></div></div>
+    <div class="building-item"><span class="material-icons">location_on</span><div><div class="building-name">Basic Law Enforcement Training</div><div class="building-loc">Building 11</div></div></div>
+    <div class="building-item"><span class="material-icons">location_on</span><div><div class="building-name">Bookstore</div><div class="building-loc">Building 9</div></div></div>
+    <div class="building-item"><span class="material-icons">location_on</span><div><div class="building-name">Business Programs</div><div class="building-loc">Building 14, 2nd Floor</div></div></div>
+    <div class="building-item"><span class="material-icons">location_on</span><div><div class="building-name">Business Office</div><div class="building-loc">Building 3</div></div></div>
+    <div class="building-item"><span class="material-icons">location_on</span><div><div class="building-name">Campus Security</div><div class="building-loc">Building 5</div></div></div>
+    <div class="building-item"><span class="material-icons">location_on</span><div><div class="building-name">Charles V. Chrestman Workforce Development Center (WDC)</div><div class="building-loc">Building 18</div></div></div>
+    <div class="building-item"><span class="material-icons">location_on</span><div><div class="building-name">Computer Services / IT Helpdesk</div><div class="building-loc">Building 14, 1st Floor</div></div></div>
+    <div class="building-item"><span class="material-icons">location_on</span><div><div class="building-name">Cosmetology</div><div class="building-loc">Building 3</div></div></div>
+    <div class="building-item"><span class="material-icons">location_on</span><div><div class="building-name">Counseling & Career Services</div><div class="building-loc">Building 13</div></div></div>
+    <div class="building-item"><span class="material-icons">location_on</span><div><div class="building-name">Criminal Justice</div><div class="building-loc">Building 11</div></div></div>
+    <div class="building-item"><span class="material-icons">location_on</span><div><div class="building-name">Culinary Arts Lab & Dining Room</div><div class="building-loc">Building 14, 1st Floor</div></div></div>
+    <div class="building-item"><span class="material-icons">location_on</span><div><div class="building-name">Accessibility Services</div><div class="building-loc">Building 13; Building 14, 1st Floor</div></div></div>
+    <div class="building-item"><span class="material-icons">location_on</span><div><div class="building-name">Education Programs & Lab</div><div class="building-loc">Building 14, 2nd Floor</div></div></div>
+    <div class="building-item"><span class="material-icons">location_on</span><div><div class="building-name">Electrical Systems Technology Programs</div><div class="building-loc">Building 9</div></div></div>
+    <div class="building-item"><span class="material-icons">location_on</span><div><div class="building-name">Emergency Medical Science</div><div class="building-loc">Buildings 17 & 19</div></div></div>
+    <div class="building-item"><span class="material-icons">location_on</span><div><div class="building-name">English Department (Curriculum)</div><div class="building-loc">Building 4</div></div></div>
+    <div class="building-item"><span class="material-icons">location_on</span><div><div class="building-name">Financial Aid</div><div class="building-loc">Building 13</div></div></div>
+    <div class="building-item"><span class="material-icons">location_on</span><div><div class="building-name">Fred G. Williams Jr. Student Center</div><div class="building-loc">Building 13</div></div></div>
+    <div class="building-item"><span class="material-icons">location_on</span><div><div class="building-name">General Classrooms</div><div class="building-loc">Buildings 1, 7, 8, 9, 11, 12, 14, 17, 18</div></div></div>
+    <div class="building-item"><span class="material-icons">location_on</span><div><div class="building-name">Honors College</div><div class="building-loc">Building 4</div></div></div>
+    <div class="building-item"><span class="material-icons">location_on</span><div><div class="building-name">Human Resource Development (HRD)</div><div class="building-loc">Building 18</div></div></div>
+    <div class="building-item"><span class="material-icons">location_on</span><div><div class="building-name">I.J. Williams Administration Building</div><div class="building-loc">Building 2</div></div></div>
+    <div class="building-item"><span class="material-icons">location_on</span><div><div class="building-name">Industrial Systems Technology Program</div><div class="building-loc">Building 12</div></div></div>
+    <div class="building-item"><span class="material-icons">location_on</span><div><div class="building-name">Literacy Education (College and Career Readiness)</div><div class="building-loc">Building 14, 1st Floor</div></div></div>
+    <div class="building-item"><span class="material-icons">location_on</span><div><div class="building-name">Lumbee Guaranty Bank Building</div><div class="building-loc">Building 1</div></div></div>
+    <div class="building-item"><span class="material-icons">location_on</span><div><div class="building-name">Math Department</div><div class="building-loc">Building 5</div></div></div>
+    <div class="building-item"><span class="material-icons">location_on</span><div><div class="building-name">Media Services</div><div class="building-loc">Anne Moss Biggs Library, Building 4</div></div></div>
+    <div class="building-item"><span class="material-icons">location_on</span><div><div class="building-name">Medical Sonography</div><div class="building-loc">Building 17, 1st Floor</div></div></div>
+    <div class="building-item"><span class="material-icons">location_on</span><div><div class="building-name">Military Affiliated Resource Center</div><div class="building-loc">Building 13</div></div></div>
+    <div class="building-item"><span class="material-icons">location_on</span><div><div class="building-name">Nursing & Nurse Aide</div><div class="building-loc">Building 17</div></div></div>
+    <div class="building-item"><span class="material-icons">location_on</span><div><div class="building-name">Pearson Vue Testing Center</div><div class="building-loc">Building 14, 2nd Floor</div></div></div>
+    <div class="building-item"><span class="material-icons">location_on</span><div><div class="building-name">Physical Plant Operations</div><div class="building-loc">Building 6</div></div></div>
+    <div class="building-item"><span class="material-icons">location_on</span><div><div class="building-name">RCC Foundation, Inc.</div><div class="building-loc">Building 13</div></div></div>
+    <div class="building-item"><span class="material-icons">location_on</span><div><div class="building-name">Radiography</div><div class="building-loc">Building 17, 1st Floor</div></div></div>
+    <div class="building-item"><span class="material-icons">location_on</span><div><div class="building-name">Registrar</div><div class="building-loc">Building 13</div></div></div>
+    <div class="building-item"><span class="material-icons">location_on</span><div><div class="building-name">Respiratory Therapy</div><div class="building-loc">Building 17, 1st Floor</div></div></div>
+    <div class="building-item"><span class="material-icons">location_on</span><div><div class="building-name">Sammy Cox Law Enforcement Center</div><div class="building-loc">Building 11</div></div></div>
+    <div class="building-item"><span class="material-icons">location_on</span><div><div class="building-name">Science Department & Labs</div><div class="building-loc">Buildings 1, 5, 7</div></div></div>
+    <div class="building-item"><span class="material-icons">location_on</span><div><div class="building-name">Small Business Center</div><div class="building-loc">Building 18</div></div></div>
+    <div class="building-item"><span class="material-icons">location_on</span><div><div class="building-name">Student Government</div><div class="building-loc">Building 13</div></div></div>
+    <div class="building-item"><span class="material-icons">location_on</span><div><div class="building-name">Surgical Technology</div><div class="building-loc">Building 17, 2nd Floor</div></div></div>
+    <div class="building-item"><span class="material-icons">location_on</span><div><div class="building-name">Truist Conference Center</div><div class="building-loc">Building 18</div></div></div>
+    <div class="building-item"><span class="material-icons">location_on</span><div><div class="building-name">Tutorial Services</div><div class="building-loc">Building 4, Library</div></div></div>
+    <div class="building-item"><span class="material-icons">location_on</span><div><div class="building-name">Welding Technology Program</div><div class="building-loc">Building 1</div></div></div>
+  </div>
+
+</div>
+<footer>&copy; 2026 Robeson Community College &nbsp;|&nbsp; <a href="https://www.robeson.edu">robeson.edu</a></footer>
+<script>function toggleMenu(){document.getElementById('mobileMenu').classList.toggle('open');}</script>
+</body>
+</html>

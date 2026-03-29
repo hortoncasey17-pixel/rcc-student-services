@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Career Services – RCC Student Services</title>
+<link rel="stylesheet" href="style.css">
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+<body>
+<nav class="topnav">
+  <img src="assets/rcc_logo.png" class="logo" alt="RCC" onerror="this.style.display='none'">
+  <a href="index.html" class="site-title">Student Services Hub</a>
+  <button class="hamburger" onclick="toggleMenu()"><span></span><span></span><span></span></button>
+  <div class="nav-links">
+    <a href="index.html">Home</a><a href="residency.html">Residency</a><a href="canvas.html">Canvas</a>
+    <a href="tutoring.html">Tutoring</a><a href="career.html" class="active">Career</a><a href="counseling.html">Counseling</a>
+    <a href="accessibility.html">Accessibility</a><a href="soar.html">SOAR</a><a href="map.html">Map</a>
+  </div>
+</nav>
+<div class="mobile-menu" id="mobileMenu">
+  <a href="index.html">Home</a><a href="residency.html">Residency</a><a href="canvas.html">Canvas</a>
+  <a href="tutoring.html">Tutoring</a><a href="career.html" class="active">Career</a><a href="counseling.html">Counseling</a>
+  <a href="accessibility.html">Accessibility</a><a href="soar.html">SOAR</a><a href="map.html">Campus Map</a>
+</div>
+
+<div class="page-header">
+  <h1>Career Services</h1>
+  <p>Need a job? Want a better job? We can help!</p>
+</div>
+
+<div class="content">
+
+  <div class="card-navy">
+    <h2>RCC Career Services</h2>
+    <p>Our mission is to assist current students and alumni in setting career goals, explore career opportunities, and access employment.</p>
+  </div>
+
+  <div class="card-light">
+    <div class="card-title"><span class="material-icons">checklist</span><h2>Services Provided</h2></div>
+    <div class="info-item"><span class="material-icons">psychology</span><span>Career Planning (interests and skills inventories)</span></div>
+    <div class="info-item"><span class="material-icons">description</span><span>Resume and Cover Letter Assistance</span></div>
+    <div class="info-item"><span class="material-icons">record_voice_over</span><span>Interview Preparation</span></div>
+    <div class="info-item"><span class="material-icons">people</span><span>Community Resource Networking</span></div>
+    <div class="info-item"><span class="material-icons">handshake</span><span>Internship and Apprenticeship Connections</span></div>
+    <div class="info-item"><span class="material-icons">work</span><span>Employability Workshops</span></div>
+    <div class="info-item"><span class="material-icons">search</span><span>Job Search and Online Job Portal — College Central Network</span></div>
+  </div>
+
+  <div class="card-green">
+    <strong style="color:var(--navy);font-size:14px;">College Central Network</strong>
+    <p style="font-size:13px;color:var(--text-body);margin:8px 0 12px;line-height:1.6;">Robeson Community College uses College Central Network as the official job resource and resume system. Available 24/7 to students, alumni, employers, and community residents.</p>
+    <a href="https://www.collegecentral.com/robeson" target="_blank" class="btn"><span class="material-icons" style="font-size:16px;">open_in_new</span>Visit College Central Network</a>
+  </div>
+
+  <div class="accordion">
+    <button class="accordion-header" onclick="toggle(this)"><span class="material-icons">psychology</span>Career Assessments<span class="material-icons accordion-arrow">keyboard_arrow_down</span></button>
+    <div class="accordion-body">
+      <p style="font-size:13px;line-height:1.6;margin-bottom:12px;">Are you unsure of your career path? Understanding yourself is your first step. The more you know about your personality type, career-related interests, skills, and values, the better equipped you are in identifying your career and educational pathway.</p>
+      <a href="https://www.truity.com/test/type-finder-personality-test-new" target="_blank" class="btn"><span class="material-icons" style="font-size:16px;">open_in_new</span>Myers & Briggs Assessment</a>
+      <a href="https://www.keirsey.com" target="_blank" class="btn"><span class="material-icons" style="font-size:16px;">open_in_new</span>Keirsey Temperament Sorter</a>
+      <a href="https://www.mynextmove.org/explore/ip" target="_blank" class="btn"><span class="material-icons" style="font-size:16px;">open_in_new</span>O*NET Interest Profiler</a>
+      <a href="https://nccareers.org/" target="_blank" class="btn"><span class="material-icons" style="font-size:16px;">open_in_new</span>NC Careers</a>
+      <a href="https://www.cfnc.org/plan-your-future/career-center/" target="_blank" class="btn"><span class="material-icons" style="font-size:16px;">open_in_new</span>College Foundation of NC (CFNC)</a>
+    </div>
+  </div>
+
+  <div class="accordion">
+    <button class="accordion-header" onclick="toggle(this)"><span class="material-icons">description</span>Resumes, Cover Letters & Interview Skills<span class="material-icons accordion-arrow">keyboard_arrow_down</span></button>
+    <div class="accordion-body">
+      <p style="font-size:13px;font-weight:700;color:var(--navy);margin-bottom:8px;">Resume Builders</p>
+      <a href="https://www.resume-now.com" target="_blank" class="btn"><span class="material-icons" style="font-size:16px;">open_in_new</span>Resume Now — Free AI Resume Builder</a>
+      <a href="https://www.livecareer.com/resume-builder" target="_blank" class="btn"><span class="material-icons" style="font-size:16px;">open_in_new</span>LiveCareer — Resume Templates</a>
+      <p style="font-size:13px;font-weight:700;color:var(--navy);margin:12px 0 8px;">Cover Letters</p>
+      <a href="https://resumegenius.com/cover-letter-builder" target="_blank" class="btn"><span class="material-icons" style="font-size:16px;">open_in_new</span>Resume Genius — Cover Letter Generator</a>
+      <p style="font-size:13px;font-weight:700;color:var(--navy);margin:12px 0 8px;">Interview Skills</p>
+      <a href="https://resumegenius.com/blog/interview/interview-questions-and-answers" target="_blank" class="btn"><span class="material-icons" style="font-size:16px;">open_in_new</span>Best Interview Questions — Resume Genius</a>
+      <a href="https://www.indeed.com/career-advice/interviewing/top-interview-questions-and-answers" target="_blank" class="btn"><span class="material-icons" style="font-size:16px;">open_in_new</span>Interview Q&A — Indeed</a>
+    </div>
+  </div>
+
+  <div class="accordion">
+    <button class="accordion-header" onclick="toggle(this)"><span class="material-icons">contact_phone</span>Contact Career Services<span class="material-icons accordion-arrow">keyboard_arrow_down</span></button>
+    <div class="accordion-body">
+      <div class="contact-row"><span class="material-icons">location_on</span><span>Building 13, Room 1315 &nbsp;·&nbsp; Mon–Fri: 8:00 AM – 5:00 PM</span></div>
+      <br>
+      <a href="tel:9102723353" class="btn"><span class="material-icons" style="font-size:16px;">phone</span>Call — (910) 272-3353</a>
+      <a href="mailto:cquintero@robeson.edu" class="btn"><span class="material-icons" style="font-size:16px;">email</span>cquintero@robeson.edu</a>
+      <a href="mailto:careers4u@robeson.edu" class="btn"><span class="material-icons" style="font-size:16px;">email</span>careers4u@robeson.edu</a>
+      <a href="https://www.collegecentral.com/robeson" target="_blank" class="btn"><span class="material-icons" style="font-size:16px;">open_in_new</span>College Central Network</a>
+    </div>
+  </div>
+
+</div>
+<footer>&copy; 2026 Robeson Community College &nbsp;|&nbsp; <a href="https://www.robeson.edu">robeson.edu</a></footer>
+<script>
+function toggleMenu(){document.getElementById('mobileMenu').classList.toggle('open');}
+function toggle(btn){btn.classList.toggle('open');btn.nextElementSibling.classList.toggle('open');}
+</script>
+</body>
+</html>
