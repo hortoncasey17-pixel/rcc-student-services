@@ -1,121 +1,38 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>RCC Student Services Hub</title>
-<link rel="stylesheet" href="style.css">
-<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <!--
+    If you are serving your web app in a path other than the root, change the
+    href value below to reflect the base path you are serving from.
+
+    The path provided below has to start and end with a slash "/" in order for
+    it to work correctly.
+
+    For more details:
+    * https://developer.mozilla.org/en-US/docs/Web/HTML/Element/base
+
+    This is a placeholder for base href that will be replaced by the value of
+    the `--base-href` argument provided to `flutter build`.
+  -->
+  <base href="/">
+
+  <meta charset="UTF-8">
+  <meta content="IE=Edge" http-equiv="X-UA-Compatible">
+  <meta name="description" content="A new Flutter project.">
+
+  <!-- iOS meta tags & icons -->
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  <meta name="apple-mobile-web-app-title" content="rcc_app">
+  <link rel="apple-touch-icon" href="icons/Icon-192.png">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="favicon.png"/>
+
+  <title>rcc_app</title>
+  <link rel="manifest" href="manifest.json">
 </head>
 <body>
-<nav class="topnav">
-  <img src="assets/rcc_logo.png" class="logo" alt="RCC Logo" onerror="this.style.display='none'">
-  <a href="index.html" class="site-title">Student Services Hub</a>
-  <button class="hamburger" onclick="toggleMenu()" aria-label="Menu">
-    <span></span><span></span><span></span>
-  </button>
-  <div class="nav-links">
-    <a href="index.html" class="active">Home</a>
-    <a href="residency.html">Residency</a>
-    <a href="canvas.html">Canvas</a>
-    <a href="tutoring.html">Tutoring</a>
-    <a href="career.html">Career</a>
-    <a href="counseling.html">Counseling</a>
-    <a href="accessibility.html">Accessibility</a>
-    <a href="soar.html">SOAR</a>
-    <a href="map.html">Map</a>
-  </div>
-</nav>
-<div class="mobile-menu" id="mobileMenu">
-  <a href="index.html" class="active">Home</a>
-  <a href="residency.html">Residency</a>
-  <a href="canvas.html">Canvas</a>
-  <a href="tutoring.html">Tutoring</a>
-  <a href="career.html">Career</a>
-  <a href="counseling.html">Counseling</a>
-  <a href="accessibility.html">Accessibility</a>
-  <a href="soar.html">SOAR</a>
-  <a href="map.html">Campus Map</a>
-</div>
-
-<div class="page-header">
-  <h1>Welcome to RCC!</h1>
-  <p>Find residency info, Canvas help, tutoring, career support, counseling, and more.</p>
-</div>
-
-<div class="content">
-
-  <div class="card-navy" style="margin-bottom:20px;">
-    <h2>RCC Student Services Hub</h2>
-    <p>Find everything you need to succeed at Robeson Community College. Tap any service below to get started.</p>
-    <br>
-    <a href="tel:9102723700" class="btn btn-navy" style="margin-top:4px;">
-      <span class="material-icons" style="font-size:18px;">phone</span> (910) 272-3700
-    </a>
-  </div>
-
-  <p style="font-size:11px;font-weight:700;color:var(--text-gray);letter-spacing:1.2px;margin-bottom:10px;">STUDENT SERVICES</p>
-
-  <div class="home-grid">
-    <a href="residency.html" class="home-tile">
-      <div class="home-tile-icon"><span class="material-icons">assignment</span></div>
-      <div class="home-tile-text"><h3>Residency</h3><p>NC residency, required docs & appeals</p></div>
-      <span class="material-icons home-tile-arrow">chevron_right</span>
-    </a>
-    <a href="canvas.html" class="home-tile">
-      <div class="home-tile-icon"><span class="material-icons">laptop</span></div>
-      <div class="home-tile-text"><h3>Canvas Login</h3><p>Step-by-step guide to your online courses</p></div>
-      <span class="material-icons home-tile-arrow">chevron_right</span>
-    </a>
-    <a href="tutoring.html" class="home-tile">
-      <div class="home-tile-icon"><span class="material-icons">menu_book</span></div>
-      <div class="home-tile-text"><h3>Tutoring</h3><p>Free tutoring in person and online 24/7</p></div>
-      <span class="material-icons home-tile-arrow">chevron_right</span>
-    </a>
-    <a href="career.html" class="home-tile">
-      <div class="home-tile-icon"><span class="material-icons">work</span></div>
-      <div class="home-tile-text"><h3>Career Center</h3><p>Resume help, job search and employer connections</p></div>
-      <span class="material-icons home-tile-arrow">chevron_right</span>
-    </a>
-    <a href="counseling.html" class="home-tile">
-      <div class="home-tile-icon"><span class="material-icons">support_agent</span></div>
-      <div class="home-tile-text"><h3>Counseling</h3><p>Academic advising, personal support and crisis help</p></div>
-      <span class="material-icons home-tile-arrow">chevron_right</span>
-    </a>
-    <a href="accessibility.html" class="home-tile">
-      <div class="home-tile-icon"><span class="material-icons">accessibility_new</span></div>
-      <div class="home-tile-text"><h3>Accessibility</h3><p>Disability services, accommodations and ADA rights</p></div>
-      <span class="material-icons home-tile-arrow">chevron_right</span>
-    </a>
-    <a href="soar.html" class="home-tile">
-      <div class="home-tile-icon"><span class="material-icons">star</span></div>
-      <div class="home-tile-text"><h3>SOAR Center</h3><p>Advising, retention support and academic success</p></div>
-      <span class="material-icons home-tile-arrow">chevron_right</span>
-    </a>
-    <a href="map.html" class="home-tile">
-      <div class="home-tile-icon"><span class="material-icons">map</span></div>
-      <div class="home-tile-text"><h3>Campus Map</h3><p>Building directory - 5160 Fayetteville Rd</p></div>
-      <span class="material-icons home-tile-arrow">chevron_right</span>
-    </a>
-  </div>
-
-  <div class="card-green" style="margin-top:20px;">
-    <strong style="color:var(--navy);font-size:14px;">RCC Main Campus</strong>
-    <p style="color:var(--text-gray);font-size:13px;margin-top:4px;">5160 Fayetteville Rd, Lumberton, NC 28360</p>
-    <p style="color:var(--text-gray);font-size:13px;">Mon – Fri &nbsp;|&nbsp; 8:00 AM – 5:00 PM</p>
-    <a href="https://www.robeson.edu" target="_blank" style="color:var(--green);font-size:13px;font-weight:600;">www.robeson.edu</a>
-  </div>
-
-</div>
-
-<footer>
-  &copy; 2026 Robeson Community College &nbsp;|&nbsp; <a href="https://www.robeson.edu">robeson.edu</a>
-</footer>
-
-<script>
-function toggleMenu() {
-  document.getElementById('mobileMenu').classList.toggle('open');
-}
-</script>
+  <script src="flutter_bootstrap.js" async></script>
 </body>
 </html>
